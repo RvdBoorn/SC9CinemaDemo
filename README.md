@@ -1,1 +1,2 @@
-"# SC9CinemaDemo" 
+#Sitecore 9 Cinema Demo
+
