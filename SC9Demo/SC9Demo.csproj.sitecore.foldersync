@@ -1,0 +1,5 @@
+﻿<Project>
+  <FolderSync SynchronizeProjectOutputFolderOnBuild="True">
+    <Folder SourceFolder="D:\Projects\SC9Demo\SC9Demo\Views" DestinationFolder="Views\" Mode="Copy" Pattern="*.cshtml" />
+  </FolderSync>
+</Project>

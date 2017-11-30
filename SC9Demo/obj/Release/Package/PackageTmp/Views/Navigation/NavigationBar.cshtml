@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SC9Demo.Models.MenuItem>
+
+<div class="js-mega-menu collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar"  >
+    <ul class="navbar-nav text-uppercase g-font-weight-600 ml-auto">
+        @foreach (var menuItem in Model)
+        {
+            if (menuItem.ShowChildrenInMenu && menuItem.HasChildrenToShowInMenu)
+            {
+                <li class="nav-item @(menuItem.IsActive ? "active" : "") hs-has-sub-menu g-mx-20--lg">
+                    <a href="@menuItem.Url" class="nav-link g-px-0" id="nav-link-1"
+                       aria-haspopup="true"
+                       aria-expanded="false"
+                       aria-controls="nav-submenu-1">@Html.Sitecore().Field("Menu Title", menuItem.Item)</a>
+
+                       <!-- sub menu-->
+                    <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-21 g-mt-11--lg--scrolling animated fadeOut" id="nav-submenu-1" aria-labelledby="nav-link-1">
+                        @foreach (var subItem in menuItem.ChildrenInCurrentLanguage)
+                        {
+                            <li class="dropdown-item"><a class="nav-link g-px-0" href="@subItem.Url">@Html.Sitecore().Field("Menu Title", subItem.Item)</a></li>
+                        }
+                    </ul>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item @(menuItem.IsActive ? "active" : "") g-mx-20--lg">
+                    <a href="@menuItem.Url" class="nav-link g-px-0">@Html.Sitecore().Field("Menu Title", menuItem.Item)</a>
+                </li>
+            }
+        }
+    </ul>
+</div>
+

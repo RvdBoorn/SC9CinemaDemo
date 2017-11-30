@@ -1,0 +1,15 @@
+﻿      <!-- Content -->
+<section class="g-py-50">
+    <div class="container">
+        <h1 class="g-mb-20">@Html.Sitecore().Field("Title")</h1>
+        <div class="row">
+            <div class="col-lg-9">
+                @Html.Sitecore().Field("Body")
+            </div>
+            <div class="col-lg-3">
+                @Html.Sitecore().Field("Icon", new { @maxWidth = "350" })
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Content -->

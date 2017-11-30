@@ -1,0 +1,20 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="sc9demo.sc" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Views\Sublayouts\Dynamic\Row.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{4960AC27-FB04-40C1-A000-EEE7107D51DB}</Item>
+  </File>
+  <File Include="Views\Sublayouts\Dynamic\DynamicColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{1AE1C97B-84B1-4AA6-9A88-2F5FA56B5336}</Item>
+  </File>
+  <File Include="Views\Banner\MapBanner.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{3A1AE614-C972-4CE0-B323-3BCCEDE1C297}</Item>
+  </File>
+  <File Include="Views\Page\ContentWithImage.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{2CC908B6-FF56-4433-A57B-87555D8552B6}</Item>
+  </File>
+  <File Include="Views\Banner\RetroTextBanner.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{045F00FE-7F20-4034-8495-3E474C8CFEC2}</Item>
+  </File>
+</Project>

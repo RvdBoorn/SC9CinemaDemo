@@ -1,0 +1,22 @@
+﻿@{ 
+    var id = SC9Demo.Configuration.SiteUI.UIHelpers.GetRandomAlphaNumeric(6);
+}
+
+
+<section class="g-py-50">
+    <div class="container">
+        @{if (!string.IsNullOrEmpty(SC9Demo.Configuration.SiteUI.UIHelpers.GetPropertyValue("SectionTitle", "")))
+            {
+                <div class="row"><h3>@SC9Demo.Configuration.SiteUI.UIHelpers.GetPropertyValue("SectionTitle", "")</h3></div>
+            }
+        }
+        <div class="row"  @(Sitecore.Context.PageMode.IsExperienceEditor ? "style=width:100%;min-height:100px" : "") id="@id">
+            @if(Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+            <style>#@id div {width: 100%;min-height: 100px;}</style>
+            }
+
+            @Html.Sitecore().DynamicPlaceholder("gridrow")          
+        </div>
+    </div>
+</section>
