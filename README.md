@@ -4,6 +4,7 @@
 
 * Install Clean Sitecore 9 With XConnect (uses SC9Demo.sc as hostname, but this shouldn't matter)
 * Install SC9DemoItems.zip using the package installer (this has all the site items, forms, media items, and other assets)
+* Apply hotfix https://sitecore.app.box.com/s/59od1en59pn7ybg2c9blqe0o33dwqz7e to resolve Experience Profile errors
 * Check the publish settings in Visual Studio (2015) so it publishes to your new sitecore instance
 * Build and publish the Solution
 * Edit program.cs SitecoreCinemaModelGenerator project, so the File.WriteAllText on line 19 matches a local path

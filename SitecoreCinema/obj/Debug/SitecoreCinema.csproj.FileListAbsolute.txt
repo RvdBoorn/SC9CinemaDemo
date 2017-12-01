@@ -27,7 +27,6 @@ D:\Projects\SC9Demo\SitecoreCinema\bin\Microsoft.AI.WindowsServer.xml
 D:\Projects\SC9Demo\SitecoreCinema\bin\Microsoft.ApplicationInsights.xml
 D:\Projects\SC9Demo\SitecoreCinema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Projects\SC9Demo\SitecoreCinema\obj\Debug\SitecoreCinema.pdb
-D:\Projects\SC9Demo\SitecoreCinema\bin\SitecoreCinema.dll.config
 D:\Projects\SC9Demo\SitecoreCinema\bin\SitecoreCinema.dll
 D:\Projects\SC9Demo\SitecoreCinema\obj\Debug\SitecoreCinema.dll
 D:\Projects\SC9Demo\SitecoreCinema\obj\Debug\SitecoreCinema.csprojResolveAssemblyReference.cache
