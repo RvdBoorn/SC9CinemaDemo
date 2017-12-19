@@ -332,6 +332,10 @@
       <HintPath>..\packages\Sitecore.XConnect.Segmentation.Predicates.Model.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.Segmentation.Predicates.Model.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Sitecore.Xdb.Common.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Xdb.Common.Web.NoReferences.9.0.171002\lib\NET462\Sitecore.Xdb.Common.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Sitecore.Zip, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Zip.9.0.171002\lib\NET462\Sitecore.Zip.dll</HintPath>
       <Private>True</Private>
@@ -8464,6 +8468,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\Pipelines\Analytics\OverrideIpAddress.cs" />
     <Compile Include="Configuration\Pipelines\IdentityProviders\Auth0IdentityProvider.cs" />
     <Compile Include="Configuration\Search\ComputedIndex\ComputedGenreField.cs" />
     <Compile Include="Configuration\SiteConfiguration.cs" />
@@ -8495,6 +8500,7 @@
     <Compile Include="Rules\Conditions\PurchasedTicketsRule.cs" />
     <Compile Include="Rules\Conditions\ReservedTickets.cs" />
     <Compile Include="Rules\Conditions\PurchasedTickets.cs" />
+    <Compile Include="Rules\XConnectClientReference.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SitecoreCinema\SitecoreCinema.csproj">

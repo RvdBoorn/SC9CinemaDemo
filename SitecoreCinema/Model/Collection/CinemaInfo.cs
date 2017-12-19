@@ -7,6 +7,7 @@ using Sitecore.XConnect;
 namespace SitecoreCinema.Model.Collection
 {
     [FacetKey(DefaultFacetKey)]
+    [Serializable]
     public class CinemaInfo : Facet
     {
         public const string DefaultFacetKey = Model.Collection.FacetKeys.CinemaInfo;

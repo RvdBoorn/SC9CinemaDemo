@@ -1,2 +1,14 @@
-
 packages/
+SitecoreCinema/MarketingAutomation/UI/node_modules/
+SitecoreCinema/MarketingAutomation/UI/codegen/
+SitecoreCinema/MarketingAutomation/UI/dist/
+SC9Demo/bin/
+SC9Demo/obj/
+SitecoreCinema/bin/
+SitecoreCinema/obj/
+SitecoreCinemaConsole/bin/
+SitecoreCinemaConsole/obj/
+
+*.dll
+
+SitecoreCinemaPOS/obj/Release/

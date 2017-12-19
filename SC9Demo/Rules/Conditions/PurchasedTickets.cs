@@ -7,6 +7,7 @@ using Sitecore.XConnect.Collection.Model;
 using System.Linq;
 using SitecoreCinema.Model.Collection;
 using Sitecore.Rules;
+using Sitecore.XConnect.Client;
 
 namespace SC9Demo.Rules.Conditions
 {
@@ -31,9 +32,17 @@ namespace SC9Demo.Rules.Conditions
         public bool Evaluate(IRuleExecutionContext context)
         {
             NumericOperationType comparison = this.Comparison;
-            var contact = context.Fact<Contact>();
+            
+            var contact = RuleExecutionContextExtensions.Fact<Contact>(context);
             if (contact == null) { return false; }
-            var visitInfo = contact.GetFacet<CinemaVisitorInfo>(CinemaVisitorInfo.DefaultFacetKey);
+
+            XConnectClient client = XConnectClientReference.GetClient();
+
+            Contact existingContact = client.Get<Contact>(contact, new ExpandOptions(CinemaVisitorInfo.DefaultFacetKey));
+            if (existingContact == null) { return false; }
+
+            CinemaVisitorInfo visitInfo = existingContact.GetFacet<CinemaVisitorInfo>(CinemaVisitorInfo.DefaultFacetKey);
+
             if (visitInfo == null) { return false; }
             return Comparison.Evaluate(visitInfo.NumberOfPurchasedTickets, NumberOfTickets);
         }
