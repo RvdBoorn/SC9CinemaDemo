@@ -1,0 +1,18 @@
+﻿@model RenderingModel
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="font-family:Lato, Arial, sans-serif;">
+    <tr align="center">
+        <td>
+            <a href="@Sitecore.Links.LinkManager.GetItemUrl(Model.Item)" target="_blank">
+                @Html.Sitecore().Field("poster", Model.Item, new { @style = "display: block; max-width:250px;border:none", @w = "250", @class = "emailwrapto100pc", @border = "0", @bc = "white" })
+            </a>
+        </td>
+    </tr>
+    <tr align="center">
+        <td><h3>@Html.Sitecore().Field("title", Model.Item) </h3></td>
+    </tr>
+    <tr align="center">
+        <td>@Html.Sitecore().Field("list", Model.Item)</td>
+    </tr>
+
+</table>

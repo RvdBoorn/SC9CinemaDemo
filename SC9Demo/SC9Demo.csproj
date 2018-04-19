@@ -201,31 +201,39 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.NoReferences.9.0.171002\lib\NET462\Sitecore.Analytics.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Analytics.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Core, Version=11.40.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Core.NoReferences.9.0.171002\lib\NET462\Sitecore.Analytics.Core.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Analytics.Core.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics.Model, Version=11.40.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Analytics.Model.NoReferences.9.0.171002\lib\NET462\Sitecore.Analytics.Model.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Analytics.Model.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.Model.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.CES.DeviceDetection, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.CES.DeviceDetection.NoReferences.9.0.171002\lib\NET462\Sitecore.CES.DeviceDetection.dll</HintPath>
+      <HintPath>..\packages\Sitecore.CES.DeviceDetection.NoReferences.9.0.171219\lib\NET462\Sitecore.CES.DeviceDetection.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.9.0.171002\lib\NET462\Sitecore.ContentSearch.dll</HintPath>
+      <HintPath>..\packages\Sitecore.ContentSearch.NoReferences.9.0.171219\lib\NET462\Sitecore.ContentSearch.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ContentSearch.Linq, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.171002\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <HintPath>..\packages\Sitecore.ContentSearch.Linq.NoReferences.9.0.171219\lib\NET462\Sitecore.ContentSearch.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceEditor, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ExperienceEditor.NoReferences.9.0.171219\lib\NET462\Sitecore.ExperienceEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.ExperienceEditor.Speak, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.ExperienceEditor.Speak.NoReferences.9.0.171219\lib\NET462\Sitecore.ExperienceEditor.Speak.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.ExperienceForms, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ExperienceForms.NoReferences.9.0.171002\lib\NET462\Sitecore.ExperienceForms.dll</HintPath>
+      <HintPath>..\packages\Sitecore.ExperienceForms.NoReferences.9.0.171219\lib\NET462\Sitecore.ExperienceForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Framework.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -281,63 +289,63 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Kernel.9.0.171002\lib\NET462\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Kernel.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Logging, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Logging.9.0.171002\lib\NET462\Sitecore.Logging.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Logging.9.0.171219\lib\NET462\Sitecore.Logging.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Logging.Client, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Logging.Client.9.0.171002\lib\NET462\Sitecore.Logging.Client.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Logging.Client.9.0.171219\lib\NET462\Sitecore.Logging.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Mvc.NoReferences.9.0.171002\lib\NET462\Sitecore.Mvc.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Mvc.NoReferences.9.0.171219\lib\NET462\Sitecore.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.NVelocity, Version=8.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.NVelocity.9.0.171002\lib\NET462\Sitecore.NVelocity.dll</HintPath>
+      <HintPath>..\packages\Sitecore.NVelocity.9.0.171219\lib\NET462\Sitecore.NVelocity.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Owin, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Owin.9.0.171002\lib\NET462\Sitecore.Owin.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Owin.9.0.171219\lib\NET462\Sitecore.Owin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Owin.Authentication, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Owin.Authentication.NoReferences.9.0.171002\lib\NET462\Sitecore.Owin.Authentication.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Owin.Authentication.NoReferences.9.0.171219\lib\NET462\Sitecore.Owin.Authentication.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.XConnect, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.XConnect.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.dll</HintPath>
+      <HintPath>..\packages\Sitecore.XConnect.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.XConnect.Client, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.XConnect.Client.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.Client.dll</HintPath>
+      <HintPath>..\packages\Sitecore.XConnect.Client.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Client.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.XConnect.Client.Configuration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.XConnect.Client.Configuration.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.Client.Configuration.dll</HintPath>
+      <HintPath>..\packages\Sitecore.XConnect.Client.Configuration.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Client.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.XConnect.Collection.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.XConnect.Collection.Model.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.Collection.Model.dll</HintPath>
+      <HintPath>..\packages\Sitecore.XConnect.Collection.Model.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Collection.Model.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.XConnect.Segmentation.Predicates, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.XConnect.Segmentation.Predicates.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.Segmentation.Predicates.dll</HintPath>
+      <HintPath>..\packages\Sitecore.XConnect.Segmentation.Predicates.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Segmentation.Predicates.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.XConnect.Segmentation.Predicates.Model, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.XConnect.Segmentation.Predicates.Model.NoReferences.9.0.171002\lib\NET462\Sitecore.XConnect.Segmentation.Predicates.Model.dll</HintPath>
+      <HintPath>..\packages\Sitecore.XConnect.Segmentation.Predicates.Model.NoReferences.9.0.171219\lib\NET462\Sitecore.XConnect.Segmentation.Predicates.Model.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Xdb.Common.Web, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Xdb.Common.Web.NoReferences.9.0.171002\lib\NET462\Sitecore.Xdb.Common.Web.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Xdb.Common.Web.NoReferences.9.0.171219\lib\NET462\Sitecore.Xdb.Common.Web.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Zip, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.Zip.9.0.171002\lib\NET462\Sitecore.Zip.dll</HintPath>
+      <HintPath>..\packages\Sitecore.Zip.9.0.171219\lib\NET462\Sitecore.Zip.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
@@ -980,6 +988,304 @@
     <Content Include="assets\img-temp\logos\img4.png" />
     <Content Include="assets\img-temp\logos\img5.png" />
     <Content Include="assets\img-temp\logos\img6.png" />
+    <Content Include="assets\img\auth0.png" />
+    <Content Include="assets\img\grainoverlay.gif" />
+    <Content Include="assets\img\icons\apple\icon1.png" />
+    <Content Include="assets\img\icons\apple\icon2.png" />
+    <Content Include="assets\img\icons\apple\icon3.png" />
+    <Content Include="assets\img\icons\apple\icon4.png" />
+    <Content Include="assets\img\icons\flags\Afghanistan.png" />
+    <Content Include="assets\img\icons\flags\African Union%28OAS%29.png" />
+    <Content Include="assets\img\icons\flags\Albania.png" />
+    <Content Include="assets\img\icons\flags\Algeria.png" />
+    <Content Include="assets\img\icons\flags\American Samoa.png" />
+    <Content Include="assets\img\icons\flags\Andorra.png" />
+    <Content Include="assets\img\icons\flags\Angola.png" />
+    <Content Include="assets\img\icons\flags\Anguilla.png" />
+    <Content Include="assets\img\icons\flags\Antarctica.png" />
+    <Content Include="assets\img\icons\flags\Antigua &amp; Barbuda.png" />
+    <Content Include="assets\img\icons\flags\Arab League.png" />
+    <Content Include="assets\img\icons\flags\Argentina.png" />
+    <Content Include="assets\img\icons\flags\Armenia.png" />
+    <Content Include="assets\img\icons\flags\Aruba.png" />
+    <Content Include="assets\img\icons\flags\ASEAN.png" />
+    <Content Include="assets\img\icons\flags\Australia.png" />
+    <Content Include="assets\img\icons\flags\Austria.png" />
+    <Content Include="assets\img\icons\flags\Azerbaijan.png" />
+    <Content Include="assets\img\icons\flags\Bahamas.png" />
+    <Content Include="assets\img\icons\flags\Bahrain.png" />
+    <Content Include="assets\img\icons\flags\Bangladesh.png" />
+    <Content Include="assets\img\icons\flags\Barbados.png" />
+    <Content Include="assets\img\icons\flags\Belarus.png" />
+    <Content Include="assets\img\icons\flags\Belgium.png" />
+    <Content Include="assets\img\icons\flags\Belize.png" />
+    <Content Include="assets\img\icons\flags\Benin.png" />
+    <Content Include="assets\img\icons\flags\Bermuda.png" />
+    <Content Include="assets\img\icons\flags\Bhutan.png" />
+    <Content Include="assets\img\icons\flags\Bolivia.png" />
+    <Content Include="assets\img\icons\flags\Bosnia &amp; Herzegovina.png" />
+    <Content Include="assets\img\icons\flags\Botswana.png" />
+    <Content Include="assets\img\icons\flags\Brazil.png" />
+    <Content Include="assets\img\icons\flags\Brunei.png" />
+    <Content Include="assets\img\icons\flags\Bulgaria.png" />
+    <Content Include="assets\img\icons\flags\Burkina Faso.png" />
+    <Content Include="assets\img\icons\flags\Burundi.png" />
+    <Content Include="assets\img\icons\flags\Cambodja.png" />
+    <Content Include="assets\img\icons\flags\Cameroon.png" />
+    <Content Include="assets\img\icons\flags\Canada.png" />
+    <Content Include="assets\img\icons\flags\Cape Verde.png" />
+    <Content Include="assets\img\icons\flags\CARICOM.png" />
+    <Content Include="assets\img\icons\flags\Cayman Islands.png" />
+    <Content Include="assets\img\icons\flags\Central African Republic.png" />
+    <Content Include="assets\img\icons\flags\Chad.png" />
+    <Content Include="assets\img\icons\flags\Chile.png" />
+    <Content Include="assets\img\icons\flags\China.png" />
+    <Content Include="assets\img\icons\flags\CIS.png" />
+    <Content Include="assets\img\icons\flags\Colombia.png" />
+    <Content Include="assets\img\icons\flags\Commonwealth.png" />
+    <Content Include="assets\img\icons\flags\Comoros.png" />
+    <Content Include="assets\img\icons\flags\Congo-Brazzaville.png" />
+    <Content Include="assets\img\icons\flags\Congo-Kinshasa.png" />
+    <Content Include="assets\img\icons\flags\Cook Islands.png" />
+    <Content Include="assets\img\icons\flags\Costa Rica.png" />
+    <Content Include="assets\img\icons\flags\Cote d%27Ivoire.png" />
+    <Content Include="assets\img\icons\flags\Croatia.png" />
+    <Content Include="assets\img\icons\flags\Cuba.png" />
+    <Content Include="assets\img\icons\flags\Cyprus.png" />
+    <Content Include="assets\img\icons\flags\Czech Republic.png" />
+    <Content Include="assets\img\icons\flags\Denmark.png" />
+    <Content Include="assets\img\icons\flags\Djibouti.png" />
+    <Content Include="assets\img\icons\flags\Dominica.png" />
+    <Content Include="assets\img\icons\flags\Dominican Republic.png" />
+    <Content Include="assets\img\icons\flags\Egypt.png" />
+    <Content Include="assets\img\icons\flags\El Salvador.png" />
+    <Content Include="assets\img\icons\flags\England.png" />
+    <Content Include="assets\img\icons\flags\Equador.png" />
+    <Content Include="assets\img\icons\flags\Equatorial Guinea.png" />
+    <Content Include="assets\img\icons\flags\Eritrea.png" />
+    <Content Include="assets\img\icons\flags\Estonia.png" />
+    <Content Include="assets\img\icons\flags\Ethiopia.png" />
+    <Content Include="assets\img\icons\flags\European Union.png" />
+    <Content Include="assets\img\icons\flags\Faroes.png" />
+    <Content Include="assets\img\icons\flags\Fiji.png" />
+    <Content Include="assets\img\icons\flags\Finland.png" />
+    <Content Include="assets\img\icons\flags\France.png" />
+    <Content Include="assets\img\icons\flags\Gabon.png" />
+    <Content Include="assets\img\icons\flags\Gambia.png" />
+    <Content Include="assets\img\icons\flags\Georgia.png" />
+    <Content Include="assets\img\icons\flags\Germany.png" />
+    <Content Include="assets\img\icons\flags\Ghana.png" />
+    <Content Include="assets\img\icons\flags\Gibraltar.png" />
+    <Content Include="assets\img\icons\flags\Greece.png" />
+    <Content Include="assets\img\icons\flags\Greenland.png" />
+    <Content Include="assets\img\icons\flags\Grenada.png" />
+    <Content Include="assets\img\icons\flags\Guadeloupe.png" />
+    <Content Include="assets\img\icons\flags\Guam.png" />
+    <Content Include="assets\img\icons\flags\Guatemala.png" />
+    <Content Include="assets\img\icons\flags\Guernsey.png" />
+    <Content Include="assets\img\icons\flags\Guinea-Bissau.png" />
+    <Content Include="assets\img\icons\flags\Guinea.png" />
+    <Content Include="assets\img\icons\flags\Guyana.png" />
+    <Content Include="assets\img\icons\flags\Haiti.png" />
+    <Content Include="assets\img\icons\flags\Honduras.png" />
+    <Content Include="assets\img\icons\flags\Hong Kong.png" />
+    <Content Include="assets\img\icons\flags\Hungary.png" />
+    <Content Include="assets\img\icons\flags\Iceland.png" />
+    <Content Include="assets\img\icons\flags\India.png" />
+    <Content Include="assets\img\icons\flags\Indonesia.png" />
+    <Content Include="assets\img\icons\flags\Iran.png" />
+    <Content Include="assets\img\icons\flags\Iraq.png" />
+    <Content Include="assets\img\icons\flags\Ireland.png" />
+    <Content Include="assets\img\icons\flags\Islamic Conference.png" />
+    <Content Include="assets\img\icons\flags\Isle of Man.png" />
+    <Content Include="assets\img\icons\flags\Israel.png" />
+    <Content Include="assets\img\icons\flags\Italy.png" />
+    <Content Include="assets\img\icons\flags\Jamaica.png" />
+    <Content Include="assets\img\icons\flags\japan.png" />
+    <Content Include="assets\img\icons\flags\Jersey.png" />
+    <Content Include="assets\img\icons\flags\Jordan.png" />
+    <Content Include="assets\img\icons\flags\Kazakhstan.png" />
+    <Content Include="assets\img\icons\flags\Kenya.png" />
+    <Content Include="assets\img\icons\flags\Kiribati.png" />
+    <Content Include="assets\img\icons\flags\Kosovo.png" />
+    <Content Include="assets\img\icons\flags\Kuwait.png" />
+    <Content Include="assets\img\icons\flags\Kyrgyzstan.png" />
+    <Content Include="assets\img\icons\flags\Laos.png" />
+    <Content Include="assets\img\icons\flags\Latvia.png" />
+    <Content Include="assets\img\icons\flags\Lebanon.png" />
+    <Content Include="assets\img\icons\flags\Lesotho.png" />
+    <Content Include="assets\img\icons\flags\Liberia.png" />
+    <Content Include="assets\img\icons\flags\Libya.png" />
+    <Content Include="assets\img\icons\flags\Liechtenstein.png" />
+    <Content Include="assets\img\icons\flags\Lithuania.png" />
+    <Content Include="assets\img\icons\flags\Luxembourg.png" />
+    <Content Include="assets\img\icons\flags\Macao.png" />
+    <Content Include="assets\img\icons\flags\Macedonia.png" />
+    <Content Include="assets\img\icons\flags\Madagascar.png" />
+    <Content Include="assets\img\icons\flags\Malawi.png" />
+    <Content Include="assets\img\icons\flags\Malaysia.png" />
+    <Content Include="assets\img\icons\flags\Maldives.png" />
+    <Content Include="assets\img\icons\flags\Mali.png" />
+    <Content Include="assets\img\icons\flags\Malta.png" />
+    <Content Include="assets\img\icons\flags\Marshall Islands.png" />
+    <Content Include="assets\img\icons\flags\Martinique.png" />
+    <Content Include="assets\img\icons\flags\Mauritania.png" />
+    <Content Include="assets\img\icons\flags\Mauritius.png" />
+    <Content Include="assets\img\icons\flags\Mexico.png" />
+    <Content Include="assets\img\icons\flags\Micronesia.png" />
+    <Content Include="assets\img\icons\flags\Moldova.png" />
+    <Content Include="assets\img\icons\flags\Monaco.png" />
+    <Content Include="assets\img\icons\flags\Mongolia.png" />
+    <Content Include="assets\img\icons\flags\Montenegro.png" />
+    <Content Include="assets\img\icons\flags\Montserrat.png" />
+    <Content Include="assets\img\icons\flags\Morocco.png" />
+    <Content Include="assets\img\icons\flags\Mozambique.png" />
+    <Content Include="assets\img\icons\flags\Myanmar%28Burma%29.png" />
+    <Content Include="assets\img\icons\flags\Namibia.png" />
+    <Content Include="assets\img\icons\flags\NATO.png" />
+    <Content Include="assets\img\icons\flags\Nauru.png" />
+    <Content Include="assets\img\icons\flags\Nepal.png" />
+    <Content Include="assets\img\icons\flags\Netherlands Antilles.png" />
+    <Content Include="assets\img\icons\flags\Netherlands.png" />
+    <Content Include="assets\img\icons\flags\New Caledonia.png" />
+    <Content Include="assets\img\icons\flags\New Zealand.png" />
+    <Content Include="assets\img\icons\flags\Nicaragua.png" />
+    <Content Include="assets\img\icons\flags\Niger.png" />
+    <Content Include="assets\img\icons\flags\Nigeria.png" />
+    <Content Include="assets\img\icons\flags\North Korea.png" />
+    <Content Include="assets\img\icons\flags\Northern Cyprus.png" />
+    <Content Include="assets\img\icons\flags\Northern Ireland.png" />
+    <Content Include="assets\img\icons\flags\Norway.png" />
+    <Content Include="assets\img\icons\flags\Olimpic Movement.png" />
+    <Content Include="assets\img\icons\flags\Oman.png" />
+    <Content Include="assets\img\icons\flags\OPEC.png" />
+    <Content Include="assets\img\icons\flags\Pakistan.png" />
+    <Content Include="assets\img\icons\flags\Palau.png" />
+    <Content Include="assets\img\icons\flags\Palestine.png" />
+    <Content Include="assets\img\icons\flags\Panama.png" />
+    <Content Include="assets\img\icons\flags\Papua New Guinea.png" />
+    <Content Include="assets\img\icons\flags\Paraguay.png" />
+    <Content Include="assets\img\icons\flags\Peru.png" />
+    <Content Include="assets\img\icons\flags\Philippines.png" />
+    <Content Include="assets\img\icons\flags\Poland.png" />
+    <Content Include="assets\img\icons\flags\Portugal.png" />
+    <Content Include="assets\img\icons\flags\Puerto Rico.png" />
+    <Content Include="assets\img\icons\flags\Qatar.png" />
+    <Content Include="assets\img\icons\flags\Red Cross.png" />
+    <Content Include="assets\img\icons\flags\Reunion.png" />
+    <Content Include="assets\img\icons\flags\Romania.png" />
+    <Content Include="assets\img\icons\flags\Russian Federation.png" />
+    <Content Include="assets\img\icons\flags\Rwanda.png" />
+    <Content Include="assets\img\icons\flags\Saint Lucia.png" />
+    <Content Include="assets\img\icons\flags\Samoa.png" />
+    <Content Include="assets\img\icons\flags\San Marino.png" />
+    <Content Include="assets\img\icons\flags\Sao Tome &amp; Principe.png" />
+    <Content Include="assets\img\icons\flags\Saudi Arabia.png" />
+    <Content Include="assets\img\icons\flags\Scotland.png" />
+    <Content Include="assets\img\icons\flags\Senegal.png" />
+    <Content Include="assets\img\icons\flags\Serbia%28Yugoslavia%29.png" />
+    <Content Include="assets\img\icons\flags\Seyshelles.png" />
+    <Content Include="assets\img\icons\flags\Sierra Leone.png" />
+    <Content Include="assets\img\icons\flags\Singapore.png" />
+    <Content Include="assets\img\icons\flags\Slovakia.png" />
+    <Content Include="assets\img\icons\flags\Slovenia.png" />
+    <Content Include="assets\img\icons\flags\Solomon Islands.png" />
+    <Content Include="assets\img\icons\flags\Somalia.png" />
+    <Content Include="assets\img\icons\flags\Somaliland.png" />
+    <Content Include="assets\img\icons\flags\South Africa.png" />
+    <Content Include="assets\img\icons\flags\South Korea.png" />
+    <Content Include="assets\img\icons\flags\Spain.png" />
+    <Content Include="assets\img\icons\flags\Sri Lanka.png" />
+    <Content Include="assets\img\icons\flags\St Kitts &amp; Nevis.png" />
+    <Content Include="assets\img\icons\flags\St Vincent &amp; the Grenadines.png" />
+    <Content Include="assets\img\icons\flags\Sudan.png" />
+    <Content Include="assets\img\icons\flags\Suriname.png" />
+    <Content Include="assets\img\icons\flags\Swaziland.png" />
+    <Content Include="assets\img\icons\flags\Sweden.png" />
+    <Content Include="assets\img\icons\flags\Switzerland.png" />
+    <Content Include="assets\img\icons\flags\Syria.png" />
+    <Content Include="assets\img\icons\flags\Tahiti%28French Polinesia%29.png" />
+    <Content Include="assets\img\icons\flags\Taiwan.png" />
+    <Content Include="assets\img\icons\flags\Tajikistan.png" />
+    <Content Include="assets\img\icons\flags\Tanzania.png" />
+    <Content Include="assets\img\icons\flags\Thailand.png" />
+    <Content Include="assets\img\icons\flags\Timor-Leste.png" />
+    <Content Include="assets\img\icons\flags\Togo.png" />
+    <Content Include="assets\img\icons\flags\Tonga.png" />
+    <Content Include="assets\img\icons\flags\Trinidad &amp; Tobago.png" />
+    <Content Include="assets\img\icons\flags\Tunisia.png" />
+    <Content Include="assets\img\icons\flags\Turkey.png" />
+    <Content Include="assets\img\icons\flags\Turkmenistan.png" />
+    <Content Include="assets\img\icons\flags\Turks and Caicos Islands.png" />
+    <Content Include="assets\img\icons\flags\Tuvalu.png" />
+    <Content Include="assets\img\icons\flags\Uganda.png" />
+    <Content Include="assets\img\icons\flags\Ukraine.png" />
+    <Content Include="assets\img\icons\flags\United Arab Emirates.png" />
+    <Content Include="assets\img\icons\flags\United Kingdom%28Great Britain%29.png" />
+    <Content Include="assets\img\icons\flags\United Nations.png" />
+    <Content Include="assets\img\icons\flags\United States of America%28USA%29.png" />
+    <Content Include="assets\img\icons\flags\Uruguay.png" />
+    <Content Include="assets\img\icons\flags\Uzbekistan.png" />
+    <Content Include="assets\img\icons\flags\Vanuatu.png" />
+    <Content Include="assets\img\icons\flags\Vatican City.png" />
+    <Content Include="assets\img\icons\flags\Venezuela.png" />
+    <Content Include="assets\img\icons\flags\Viet Nam.png" />
+    <Content Include="assets\img\icons\flags\Virgin Islands British.png" />
+    <Content Include="assets\img\icons\flags\Virgin Islands US.png" />
+    <Content Include="assets\img\icons\flags\Wales.png" />
+    <Content Include="assets\img\icons\flags\Western Sahara.png" />
+    <Content Include="assets\img\icons\flags\Yemen.png" />
+    <Content Include="assets\img\icons\flags\Zambia.png" />
+    <Content Include="assets\img\icons\flags\Zimbabwe.png" />
+    <Content Include="assets\img\icons\mobile.png" />
+    <Content Include="assets\img\icons\oil.png" />
+    <Content Include="assets\img\icons\payment-systems\master-card.png" />
+    <Content Include="assets\img\icons\payment-systems\visa.png" />
+    <Content Include="assets\img\icons\pin\aqua.png" />
+    <Content Include="assets\img\icons\pin\black.png" />
+    <Content Include="assets\img\icons\pin\blue.png" />
+    <Content Include="assets\img\icons\pin\bluegray.png" />
+    <Content Include="assets\img\icons\pin\brown.png" />
+    <Content Include="assets\img\icons\pin\cyan.png" />
+    <Content Include="assets\img\icons\pin\darkblue.png" />
+    <Content Include="assets\img\icons\pin\darkpurple.png" />
+    <Content Include="assets\img\icons\pin\darkred.png" />
+    <Content Include="assets\img\icons\pin\deeporange.png" />
+    <Content Include="assets\img\icons\pin\gray-dark-v2.png" />
+    <Content Include="assets\img\icons\pin\green.png" />
+    <Content Include="assets\img\icons\pin\indigo.png" />
+    <Content Include="assets\img\icons\pin\lightred.png" />
+    <Content Include="assets\img\icons\pin\orange.png" />
+    <Content Include="assets\img\icons\pin\pink.png" />
+    <Content Include="assets\img\icons\pin\purple.png" />
+    <Content Include="assets\img\icons\pin\red.png" />
+    <Content Include="assets\img\icons\pin\teal.png" />
+    <Content Include="assets\img\icons\pin\white.png" />
+    <Content Include="assets\img\icons\pin\yellow.png" />
+    <Content Include="assets\img\icons\sd-new-social-0516_01.jpg" />
+    <Content Include="assets\img\icons\sd-new-social-0516_02.jpg" />
+    <Content Include="assets\img\icons\sd-new-social-0516_03.jpg" />
+    <Content Include="assets\img\icons\sd-new-social-0516_04.jpg" />
+    <Content Include="assets\img\icons\sd-new-social-0516_05.jpg" />
+    <Content Include="assets\img\icons\sd-new-social-0516_06.jpg" />
+    <Content Include="assets\img\icons\set-1\01.png" />
+    <Content Include="assets\img\icons\set-1\02.png" />
+    <Content Include="assets\img\icons\set-1\03.png" />
+    <Content Include="assets\img\icons\set-2\icon1.png" />
+    <Content Include="assets\img\icons\set-2\icon2.png" />
+    <Content Include="assets\img\icons\set-2\icon3.png" />
+    <Content Include="assets\img\icons\set-2\icon4.png" />
+    <Content Include="assets\img\icons\set-3\icon1.png" />
+    <Content Include="assets\img\icons\set-3\icon2.png" />
+    <Content Include="assets\img\icons\set-3\icon3.png" />
+    <Content Include="assets\img\maps\map.png" />
+    <Content Include="assets\img\maps\map.svg" />
+    <Content Include="assets\img\maps\map1.png" />
+    <Content Include="assets\img\maps\map2.png" />
+    <Content Include="assets\img\maps\map3.png" />
+    <Content Include="assets\img\nope.png" />
+    <Content Include="assets\img\page.png" />
+    <Content Include="assets\img\value.png" />
     <Content Include="assets\js\blocks\temp.txt" />
     <Content Include="assets\js\components\gmap\hs.map.js" />
     <Content Include="assets\js\components\hs.ajax-autocomplete.js" />
@@ -8429,6 +8735,7 @@
     <Content Include="assets\vendor\tooltip.js\.bower.json" />
     <Content Include="exit.aspx" />
     <Content Include="identifyas.aspx" />
+    <Content Include="OfficecoreComponents\SitecoreEditor\LaunchFieldEditor.js" />
     <Content Include="packages.config" />
     <Content Include="App_config\Include\Auth0.config" />
     <Content Include="App_config\Include\SC9Demo.config" />
@@ -8455,6 +8762,17 @@
     <Content Include="Views\Page\ContentWithImage.cshtml" />
     <Content Include="Views\Banner\RetroTextBanner.cshtml" />
     <Content Include="Views\Visit\VisitDetails.cshtml" />
+    <Content Include="Views\Email\2colEmail.cshtml" />
+    <Content Include="Views\Email\footer.cshtml" />
+    <Content Include="Views\Email\Header.cshtml" />
+    <Content Include="Views\Email\ImagePromo - Copy.cshtml" />
+    <Content Include="Views\Email\ImagePromo.cshtml" />
+    <Content Include="Views\Email\ImagePromoNoPadding.cshtml" />
+    <Content Include="Views\Email\ImageText - Copy.cshtml" />
+    <Content Include="Views\Email\ImageText.cshtml" />
+    <Content Include="Views\Email\ProductView.cshtml" />
+    <Content Include="Views\Email\CinemaEmail.cshtml" />
+    <Content Include="Views\Email\TextImage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -8468,6 +8786,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\GenerateFieldEditorUrl.cs" />
     <Compile Include="Configuration\Pipelines\Analytics\OverrideIpAddress.cs" />
     <Compile Include="Configuration\Pipelines\IdentityProviders\Auth0IdentityProvider.cs" />
     <Compile Include="Configuration\Search\ComputedIndex\ComputedGenreField.cs" />

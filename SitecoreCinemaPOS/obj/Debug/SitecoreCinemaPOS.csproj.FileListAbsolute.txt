@@ -49,7 +49,6 @@ D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Interactive.Async.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Interactive.Async.Providers.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Newtonsoft.Json.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Remotion.Linq.xml
-D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Net.Http.Formatting.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Sitecore.Framework.Conditions.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
@@ -69,7 +68,13 @@ D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Microsoft.Extensions.Configurati
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Microsoft.Extensions.Configuration.EnvironmentVariables.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Microsoft.Extensions.Configuration.CommandLine.xml
 D:\Projects\SC9Demo\SitecoreCinemaPOS\obj\Debug\SitecoreCinemaPOS.csprojResolveAssemblyReference.cache
-D:\Projects\SC9Demo\SitecoreCinemaPOS\obj\Debug\SitecoreCinemaPOS.csproj.SitecoreCinemaPOS.exe.config
 D:\Projects\SC9Demo\SitecoreCinemaPOS\obj\Debug\SitecoreCinemaPOS.exe
 D:\Projects\SC9Demo\SitecoreCinemaPOS\obj\Debug\SitecoreCinemaPOS.pdb
 D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Runtime.dll
+D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Net.Http.dll
+D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Net.Http.Extensions.dll
+D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Net.Http.Primitives.dll
+D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Net.Http.WebRequest.dll
+D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\Sitecore.Xdb.MarketingAutomation.Core.dll
+D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Net.Http.xml
+D:\Projects\SC9Demo\SitecoreCinemaPOS\bin\Debug\System.Net.Http.WebRequest.xml

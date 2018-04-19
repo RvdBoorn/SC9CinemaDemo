@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -10,26 +11,27 @@ namespace SitecoreCinema.MarketingAutomation.Services
 
     public interface ISMSService
     {
-        bool SendSMS(string phoneNumber, string message);
+        bool SendSMS(string phoneNumber, string message, string firstName);
     }
 
     public class SMSService : ISMSService
     {
-        public bool SendSMS(string phoneNumber, string message)
+        public bool SendSMS(string phoneNumber, string message, string firstName)
         {
-            var result= SendMessage(phoneNumber, message);
+            var result= SendMessage(phoneNumber, message, firstName);
             return result.Result;
         }
 
-        private async System.Threading.Tasks.Task<bool> SendMessage(string phoneNumber, string message)
+        private async System.Threading.Tasks.Task<bool> SendMessage(string phoneNumber, string message, string firstName)
         {
-            using (var client = new HttpClient())
+
+           using (var client = new HttpClient())
             {
                 var values = new Dictionary<string, string>
                 {
-                    {"email", "john.penfold@gmail.com"},
-                    {"password", "6pm9nT4L3nrH"},
-                    {"device", "68540"},
+                    {"email", ConfigurationManager.AppSettings["SmsGatewayEmail"]},
+                    {"password", ConfigurationManager.AppSettings["SmsGatewayPassword"]},
+                    {"device", ConfigurationManager.AppSettings["SmsGatewayDeviceId"]},
                     {"number", phoneNumber},
                     {"message", message }
                 };

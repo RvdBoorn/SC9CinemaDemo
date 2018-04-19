@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <Site Server="sc9demo.sc" UserName="sitecore\admin" IsRemoteSitecore="False" />
+    <Site Server="sc9cinema.sc" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
   <File Include="Views\Sublayouts\Dynamic\Row.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{4960AC27-FB04-40C1-A000-EEE7107D51DB}</Item>

@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { ReadonlyEditorComponent } from './editor/readonly-editor.component';
+import { SmsEditorComponent } from './editor/sms-editor.component';
 
 @NgModule({
     imports: [
         CommonModule, 
         FormsModule
     ],
-    declarations: [ReadonlyEditorComponent],
-    entryComponents: [ReadonlyEditorComponent]
+    declarations: [SmsEditorComponent],
+    entryComponents: [SmsEditorComponent]
 })
 export class SendSmsModule { }
  

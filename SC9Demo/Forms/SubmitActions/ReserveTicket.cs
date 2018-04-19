@@ -42,7 +42,7 @@ namespace SC9Demo.Forms.SubmitActions
                 {
                     try
                     {
-                        var contact = client.Get<Sitecore.XConnect.Contact>(trackerIdentifier, new Sitecore.XConnect.ContactExpandOptions());
+                        var contact = client.Get<Sitecore.XConnect.Contact>(trackerIdentifier, new Sitecore.XConnect.ContactExpandOptions(CinemaVisitorInfo.DefaultFacetKey));
                         var contactInfo = contact.GetFacet<CinemaVisitorInfo>();
 
                         if (contact == null)
@@ -54,24 +54,34 @@ namespace SC9Demo.Forms.SubmitActions
                         if (contact != null)
                         {
                             int tickets = 1;
-                            if(contactInfo != null)
+                            if (contactInfo != null)
                             {
-                                tickets = contactInfo.NumberOfReservedTickets + 1;
+                                contactInfo.NumberOfReservedTickets = contactInfo.NumberOfReservedTickets + 1;
+                                var interaction = new Interaction(contact, InteractionInitiator.Contact, POS, "");
+                                client.SetFacet<CinemaInfo>(interaction, CinemaInfo.DefaultFacetKey, new CinemaInfo() { Cinema = "St Katharines Dock" });
+                                client.SetFacet<CinemaVisitorInfo>(contact, CinemaVisitorInfo.DefaultFacetKey, contactInfo);
+                                var moviename = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID(GetValue(movie))).Name;
+                                interaction.Events.Add(new ReservedCinemaTicket(DateTime.UtcNow, "GBP", 0) { MovieName = moviename });
+                                client.AddInteraction(interaction);
+                                client.Submit();
                             }
-                            
-                           var vistitorInfo = new CinemaVisitorInfo
-                           {
-                                    NumberOfReservedTickets = tickets, 
-                                    FoodDiscountApplied = true
-                           };
+                            else
+                            {
 
-                            var interaction = new Interaction(contact, InteractionInitiator.Contact, POS, "");
-                            client.SetFacet<CinemaInfo>(interaction, CinemaInfo.DefaultFacetKey, new CinemaInfo() { Cinema = "St Katharines Dock" });
-                            client.SetFacet<CinemaVisitorInfo>(contact, CinemaVisitorInfo.DefaultFacetKey, vistitorInfo);
-                            var moviename = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID(GetValue(movie))).Name;
-                            interaction.Events.Add(new ReservedCinemaTicket(DateTime.UtcNow, "GBP", 0) { MovieName = moviename });
-                            client.AddInteraction(interaction);
-                            client.Submit();
+                                var vistitorInfo = new CinemaVisitorInfo
+                                {
+                                    NumberOfReservedTickets = tickets,
+                                    FoodDiscountApplied = true
+                                };
+
+                                var interaction = new Interaction(contact, InteractionInitiator.Contact, POS, "");
+                                client.SetFacet<CinemaInfo>(interaction, CinemaInfo.DefaultFacetKey, new CinemaInfo() { Cinema = "St Katharines Dock" });
+                                client.SetFacet<CinemaVisitorInfo>(contact, CinemaVisitorInfo.DefaultFacetKey, vistitorInfo);
+                                var moviename = Sitecore.Context.Database.GetItem(new Sitecore.Data.ID(GetValue(movie))).Name;
+                                interaction.Events.Add(new ReservedCinemaTicket(DateTime.UtcNow, "GBP", 0) { MovieName = moviename });
+                                client.AddInteraction(interaction);
+                                client.Submit();
+                            }
                         }
                     }
                     catch(Exception ex)

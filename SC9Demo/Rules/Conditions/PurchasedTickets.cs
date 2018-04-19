@@ -32,6 +32,7 @@ namespace SC9Demo.Rules.Conditions
         public bool Evaluate(IRuleExecutionContext context)
         {
             NumericOperationType comparison = this.Comparison;
+
             
             var contact = RuleExecutionContextExtensions.Fact<Contact>(context);
             if (contact == null) { return false; }

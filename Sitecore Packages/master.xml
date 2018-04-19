@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<razl>
+  <connection name="sc9demo" readOnly="true" install="true">
+    <url>http://sc9demo.sc</url>
+    <accessGuid>6e00762a-e906-4bc8-9a5e-c52a71882ee3</accessGuid>
+    <database>master</database>
+    <path>D:\websites\sc9demo.sc</path>
+  </connection>
+  <connection name="sc901cinema" readOnly="false" install="true">
+    <url>http://sc9cinema.sc</url>
+    <accessGuid>6310ef8a-4ead-49b7-b8f1-ac1352c3cc02</accessGuid>
+    <database>master</database>
+    <path>D:\websites\sc9cinema.sc</path>
+  </connection>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Home' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">110d559f-dea5-42ea-9c1c-8a5df7e70ef9</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Home/Now Showing' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">86319274-49d2-4fc7-8347-caaad79a9c6d</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Home/Cinema Info' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">021f20e6-d77c-4949-9c1c-6eb1cb04b1d7</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Home/Specials' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">1bbb6697-9dd7-44e5-a9ca-e9995323e723</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Home/Sitecore9 Unlimited' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">2dd4cfe1-77db-4748-9025-478bf4766276</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Home/Reserve Ticket' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">935f4211-9592-4482-8795-3629cf482fe6</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Home/Configuration' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">3aa966f0-2192-4853-9a4a-32776b78e9b6</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Global' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">ead422ce-6974-4b97-9187-caa3b1298eb7</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Buckets/Facets/Age Rating' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">c8040528-b544-4c98-b4fb-a9810785236c</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Buckets/Facets/Genre' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">3b953608-c381-4301-9e9a-2a197a40898d</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Forms/Submit Actions/Reserve Ticket' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">e14b0a7e-a373-4b61-8633-60cb54896c46</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Forms/Submit Actions/Update Contact' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">a29c2f8c-5200-4685-8807-6e3fafd6ea3c</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Forms/Submit Actions/Update Salesforce' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">8a637517-64de-422f-94db-1c626c2cf420</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/Forms/Reserve Cinema Tickets' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">903d587e-aedf-467f-8a89-dc57317d1090</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/Forms/Reserve Cinema Tickets Single Page' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">46a85271-906b-4f4f-b1e3-678083998e08</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Automation Plans/2017' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">e4da079d-72b8-4099-9fc9-27c723c3700a</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Campaigns/Online' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">24a79b87-1763-4e8c-8a0b-4e17de6fc951</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/Claimed Food Discount Code-3fdb155d-77d1-4b04-edb8-8c5fd17d0602' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">3fdb155d-77d1-4b04-edb8-8c5fd17d0602</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/Offered Food Discount Code-6a4d4351-f8c8-4114-d486-23669e9e3a66' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">6a4d4351-f8c8-4114-d486-23669e9e3a66</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/Purchase Snacks and Food-7779f356-0bc5-42ea-85e2-5a5176881f06' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">7779f356-0bc5-42ea-85e2-5a5176881f06</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/Reserved more than one ticket-f3d84ff7-f2d0-4eb3-a99c-725279570d90' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">f3d84ff7-f2d0-4eb3-a99c-725279570d90</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/Sitecore Unlimited  Target List-f97dc4e4-0eab-4f51-8c27-d335f6802c09' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">f97dc4e4-0eab-4f51-8c27-d335f6802c09</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/test-0df4dfa3-b9ef-49bf-b850-bb3bf2242409' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">0df4dfa3-b9ef-49bf-b850-bb3bf2242409</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/Unclaimed Reserved Tickets-a1fba647-e4ed-4f89-ef99-3600f01db24c' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">a1fba647-e4ed-4f89-ef99-3600f01db24c</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Contact Lists/Claimed Food Discount Code-3fdb155d-77d1-4b04-edb8-8c5fd17d0602' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">3fdb155d-77d1-4b04-edb8-8c5fd17d0602</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Goals/Apply Food Discount' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">bf87421b-ebc4-4e57-8347-42695d650366</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Goals/Received Food Discount' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">9ca11d99-39c5-45c0-a5ae-c0afe28dca68</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Goals/Reserved Ticket' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">6a6f56dd-4e8f-449a-92e7-0a0c372747ee</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Goals/Watched Horror Movie' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">025fb9c8-a7ed-4f51-b659-a7654c565fae</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Goals/Watched ScFi Movie' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">02fcdf50-0675-44b6-a428-962ebf0c41b7</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Outcomes/Purchased Food' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">6ddaac80-61b1-46c1-b433-70e09a56034f</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Outcomes/Purchased Ticket' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">4c641625-c1e7-489c-8492-346aa95c41e2</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Outcomes/Reserved Ticket' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">7fc83103-8824-46ae-a7fe-914164d47d00</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Profiles/Age' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">2a2994f6-09d7-479f-a2d6-7863407b9c48</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Marketing Control Panel/Profiles/Genre' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">5e32cf35-f408-450a-a978-ce2cad9327c9</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Modules/Launch Sitecore' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">7e57b9d6-fbe1-4775-ade8-c8177c169101</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Analytics/Marketing Automation/Activity Types/Send SMS Message' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">1973d9ef-806c-41ef-af6c-29adf90ae3f3</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Buckets/Facets/Age Rating' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">c8040528-b544-4c98-b4fb-a9810785236c</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Buckets/Facets/Genre' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">3b953608-c381-4301-9e9a-2a197a40898d</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Forms/Submit Actions/Reserve Ticket' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">e14b0a7e-a373-4b61-8633-60cb54896c46</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Forms/Submit Actions/Update Contact' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">a29c2f8c-5200-4685-8807-6e3fafd6ea3c</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Forms/Submit Actions/Update Salesforce' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">8a637517-64de-422f-94db-1c626c2cf420</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Rules/Definitions/Elements/Movie Tickets' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">8c35c2c0-922e-44fc-82c2-560a95066544</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Rules/Definitions/Elements/Xconnect - Movies' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">14604254-ee85-404c-9476-207d63029914</parameter>
+  </operation>
+</razl>

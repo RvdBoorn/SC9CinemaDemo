@@ -6,7 +6,7 @@ export class SendSmsActivity extends SingleItem {
        const cssClass = this.isDefined ? '' : 'undefined';
        
        return `
-           <div class="viewport-readonly-editor marketing-action ${cssClass}">
+           <div class="marketing-action ${cssClass}">
                <span class="icon">
                    <img src="/~/icon/OfficeWhite/32x32/ma_sms_link_clicked.png" />
              </span>

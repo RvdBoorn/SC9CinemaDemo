@@ -1,0 +1,254 @@
+﻿@using Sitecore.EmailCampaign.SampleNewsletter.Repositories
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+
+
+@{
+    var repository = new NewsletterOptionsRepository();
+    var options = repository.Get(Model.Item);
+}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <title>SportsDirect.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <style type="text/css">
+
+body, table, tbody, tr, td, a, p, li, span, div {
+                font-size: 12px;
+                font-family: Arial, sans-serif;
+}
+a, a:link, a:visited, a:active, a:hover, a:focus, a:link {
+                color: #444444;
+}
+a, a:link, a:visited, a:active, a:link {
+                text-decoration: none;
+}
+a:hover, a:focus {
+                text-decoration: underline;
+}
+#outlook a {
+                padding: 0;
+}
+.ReadMsgBody {
+                width: 100%;
+}
+.ExternalClass {
+                width: 100%;
+}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+                line-height: 100%;
+}
+body, table, td, a {
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+}
+table, td {
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+}
+img {
+                -ms-interpolation-mode: bicubic;
+                border: 0;
+                height: auto;
+                line-height: 100%;
+                outline: none;
+                text-decoration: none;
+}
+body {
+                height: 100% !important;
+                margin: 0;
+                padding: 0;
+                width: 100% !important;
+                font-family: 'Lato', Arial, sans-serif;
+}
+table {
+                border-collapse: collapse !important;
+}
+.apple-links a {
+                color: #999999;
+                text-decoration: none;
+}
+.menu-txt, a.menu-txt {
+                font-size: 15px;
+                font-family: 'Lato', Arial, sans-serif;
+                color: #FFFFFF !important;
+                margin: 0 !important;
+                text-align: center;
+                text-decoration: none !important;
+                display: block;
+}
+.white-color, a.white-color {
+                color: #FFFFFF !important;
+}
+
+@@media screen and (max-width: 686px) {
+table[class=emailwrapto100pc], img[class=emailwrapto100pc], p[class=mailwrapto100pc] {
+                width: 100% !important;
+                height: auto !important;
+}
+table[class=socialGroup] {
+                max-width: 450px;
+}
+table[class=brandGroup] {
+                max-width: 309px;
+}
+img[class=emailwrapto75pc] {
+                width: 75% !important;
+                height: auto !important;
+}
+table[class=emailwrapto50pc] {
+                width: 50% !important;
+}
+td[class=noPadd] {
+                padding: 0;
+}
+table[class=emailmob] {
+                display: table !important;
+                overflow: visible !important;
+                max-height: none !important;
+                height: auto !important;
+                width: 100% !important;
+                visibility: visible !important;
+                line-height: normal !important;
+                max-height: none !important;
+                max-width: none !important;
+                float: none !important;
+}
+td[class=emailmob] {
+                display: table-cell !important;
+               overflow: visible !important;
+                height: auto !important;
+                width: 100% !important;
+                visibility: visible !important;
+                line-height: normal !important;
+                max-height: none !important;
+                max-width: none !important;
+                float: none !important;
+}
+img[class=emailmob] {
+                display: block !important;
+                overflow: visible !important;
+                height: auto !important;
+                width: 100% !important;
+                visibility: visible !important;
+                line-height: normal !important;
+                max-height: none !important;
+                max-width: none !important;
+                float: none !important;
+}
+table[class=mobile-hide], td[class=mobile-hide], img[class=mobile-hide] {
+                display: none !important;
+                width: 0 !important;
+                height: 0 !important;
+                overflow: hidden !important;
+                visibility: hidden !important;
+                border: none !important;
+                line-height: 0 !important;
+                max-height: 0 !important;
+                max-width: 0 !important;
+                float: left !important;
+}
+td[class=view-web-txt] {
+                color: #3b3b3b !important;
+}
+td[class=mob-menu-width-face] {
+                width: 22.89% !important;
+}
+td[class=mob-menu-width-twit] {
+                width: 26.22% !important;
+}
+td[class=mob-menu-width-goog] {
+                width: 28.22% !important;
+}
+td[class=mob-menu-width-insta] {
+                width: 22.69% !important;
+}
+td[class=mob-menu-width-nike] {
+                width: 24.92% !important;
+}
+td[class=mob-menu-width-undera] {
+                width: 26.21% !important;
+}
+td[class=mob-menu-width-adi] {
+                width: 22.66% !important;
+}
+td[class=mob-menu-width-puma] {
+                width: 26.21% !important;
+}
+}
+
+.emailwrapto100pc {border:none !important}
+    </style>
+
+</head>
+<body style="padding:0; margin:0;" >
+    <!--CONTAINER TABLE-->
+    <table border="0" cellspacing="0" cellpadding="0" width="100%" style"table-layout:fixed;">
+        <tr>
+            <td align="center" bgcolor="#EEEEEE">
+                <!-- HIDDEN PREHEADER-->
+
+                <div style="display: none; font-size: 1px; color: #333333; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px;opacity: 0; overflow: hidden; mso-hide: all;">
+                    Shop Now
+                </div>
+
+                <!--WRAPPER TABLE-->
+
+                <table border="0" cellspacing="0" cellpadding="0" width="686" class="emailwrapto100pc" bgcolor="#FFFFFF">
+                    <tr>
+                        <td>
+                            @Html.Sitecore().Placeholder("header")
+
+
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td height="0"></td>
+                                </tr>
+                            </table>
+
+                            @Html.Sitecore().Placeholder("email-main")
+
+
+ 
+                             
+                            <!--End - Featured Image --> 
+                              <table border="0" cellpadding="0" cellspacing="0" width="10 =0%">
+                                <tr>
+                                    <td height="10"></td>
+                                </tr>
+                            </table> 
+                             
+                             
+                            <!-- rpcampaign:sd18021810-->
+                             
+                             
+                             
+                            <!-- Below is the Footer. Do not edit below this point -->
+                             
+                            @Html.Partial("~/views/email/footer.cshtml")
+
+
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+ 
+    <script>
+        var iframe = window.parent.document.getElementsByTagName("iframe");
+        var height = document.documentElement.getBoundingClientRect().height;
+        iframe[0].height = height;
+        iframe[0].style = "width:100%;height:"+height+";min-height:0px;"
+        iframe[0].scrolling = "yes";
+    </script>
+
+</body>
+</html>

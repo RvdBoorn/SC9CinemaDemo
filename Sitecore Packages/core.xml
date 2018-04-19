@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<razl>
+  <connection name="sc9demo" readOnly="true" install="true">
+    <url>http://sc9demo.sc</url>
+    <accessGuid>6e00762a-e906-4bc8-9a5e-c52a71882ee3</accessGuid>
+    <database>core</database>
+    <path>D:\websites\sc9demo.sc</path>
+  </connection>
+  <connection name="sc901cinema" readOnly="false" install="true">
+    <url>http://sc9cinema.sc</url>
+    <accessGuid>6310ef8a-4ead-49b7-b8f1-ac1352c3cc02</accessGuid>
+    <database>core</database>
+    <path>D:\websites\sc9cinema.sc</path>
+  </connection>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/system/Settings/Services/API Keys/OData Item API Key' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">b82669a8-a983-4d07-9635-15d317609d7e</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Applications/WebEdit/Custom Experience Buttons/Banner Settings' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">ee7f553c-706f-4b26-9037-91d1632535ee</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Applications/WebEdit/Custom Experience Buttons/Movie Settings' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">093d07ce-f30b-4dcb-8d6b-a2de6b37df8c</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Applications/WebEdit/Ribbons/Standalone Buttons/Meta Data' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">d78a9da3-d3ee-44dd-bb38-50f4006e5de6</parameter>
+  </operation>
+  <operation name="CopyItem" source="sc9demo" target="sc901cinema">
+    <!--Copy '/sitecore/content/Applications/WebEdit/Ribbons/Standalone Buttons/Workbox' and all missing parents from 'sc9demo' to 'sc901cinema'-->
+    <parameter name="itemId">564d70c1-a2a2-4c24-ad95-c3660bc191f1</parameter>
+  </operation>
+</razl>

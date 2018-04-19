@@ -1,0 +1,25 @@
+﻿@model RenderingModel
+<!--Start  - Featured Image -->
+@{
+    string link = "";
+    if (Model.Item.Fields["link to"] != null)
+    {
+        link = ((Sitecore.Data.Fields.LinkField)Model.Item.Fields["link to"]).GetFriendlyUrl();
+    }
+}
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+    <td width="45%" style="padding-right:15px; padding-left:10px; text-align:right" valign="middle">
+        <h1 style="font-size:18px">@Html.Sitecore().Field("title", Model.Item)</h1>
+        <p style="font-size:14px">@Html.Sitecore().Field("text", Model.Item)</p>
+    </td>
+        <td>
+            <a href="@link" target="_blank">
+                @Html.Sitecore().Field("image", Model.Item, new { @style="display: block; max-width:370px;border:none", @w="370",@class="emailwrapto100pc",@border="0",@bc="white" })
+            </a>
+</td>
+    </tr>
+    <tr>
+    <td height="10"></td>
+    </tr>
+</table>

@@ -20,6 +20,16 @@ namespace SitecoreCinema.MarketingAutomation.Activity
             get; set;
         }
 
+        public ISMSService SMSService
+        {
+            get; set;
+        }
+
+        public SendSMSActivity(ISMSService smsService)
+        {
+            SMSService = smsService;
+        }
+
         public string smsmessagetext { get; set; }
 
         public ActivityResult Invoke(IContactProcessingContext context)
@@ -53,22 +63,8 @@ namespace SitecoreCinema.MarketingAutomation.Activity
                 }
 
 
+                var result = SMSService.SendSMS(phoneNumber, this.smsmessagetext, contact.Personal().FirstName);
 
-                // var result = SMSService.SendSMS(phoneNumber, "You have reserved a ticket");
-
-                using (WebClient client = new WebClient())
-                {
-                    byte[] response = client.UploadValues("http://smsgateway.me/api/v3/messages/send", new System.Collections.Specialized.NameValueCollection()
-                {
-                    {"email", "john.penfold@gmail.com"},
-                    {"password", "6pm9nT4L3nrH"},
-                    {"device", "68540"},
-                    {"number", phoneNumber},
-                    {"message", "Hello " + contact.Personal().FirstName + ", " + this.smsmessagetext}
-                });
-
-                    string rusultstring = System.Text.Encoding.UTF8.GetString(response);
-                }
             }
             
             return (ActivityResult)new SuccessMove();

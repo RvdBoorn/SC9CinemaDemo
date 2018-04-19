@@ -30,71 +30,61 @@ namespace SC9Demo.Forms.SubmitActions
             var email = fields.Where(x => x.Name.ToLower() == "e-mail").FirstOrDefault();
             if (email != null)
             {
-                if (Sitecore.Analytics.Tracker.Current.Contact.IsNew)
+                Sitecore.Analytics.Tracker.Current.Session.IdentifyAs("sitecoreextranet", GetValue(email));
+                var manager = Sitecore.Configuration.Factory.CreateObject("tracking/contactManager", true) as Sitecore.Analytics.Tracking.ContactManager;
+
+                if (manager != null)
                 {
+                    Sitecore.Analytics.Tracker.Current.Contact.ContactSaveMode = ContactSaveMode.AlwaysSave;
+                    manager.SaveContactToCollectionDb(Sitecore.Analytics.Tracker.Current.Contact);
 
-                    Sitecore.Analytics.Tracker.Current.Session.IdentifyAs("sitecoreextranet", GetValue(email));
+                    var trackerIdentifier = new IdentifiedContactReference("sitecoreextranet", GetValue(email));
 
-                    var manager = Sitecore.Configuration.Factory.CreateObject("tracking/contactManager", true) as Sitecore.Analytics.Tracking.ContactManager;
-
-                    if (manager != null)
+                    using (Sitecore.XConnect.Client.XConnectClient client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
                     {
-                        Sitecore.Analytics.Tracker.Current.Contact.ContactSaveMode = ContactSaveMode.AlwaysSave;
-                        manager.SaveContactToCollectionDb(Sitecore.Analytics.Tracker.Current.Contact);
-
-                        var trackerIdentifier = new IdentifiedContactReference("sitecoreextranet", GetValue(email));
-
-                        using (Sitecore.XConnect.Client.XConnectClient client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
+                        try
                         {
-                            try
+                            var contact = client.Get<Sitecore.XConnect.Contact>(trackerIdentifier, new Sitecore.XConnect.ContactExpandOptions());
+
+                            if (contact == null)
                             {
-                                var contact = client.Get<Sitecore.XConnect.Contact>(trackerIdentifier, new Sitecore.XConnect.ContactExpandOptions());
-
-                                if (contact == null)
-                                {
-                                    contact = new Contact(new ContactIdentifier("sitecoreextranet", GetValue(email), ContactIdentifierType.Known));
-                                }
-
-                                if (contact != null)
-                                {
-                                    PersonalInformation personalInfoFacet = new PersonalInformation();
-
-                                    var firstname = fields.Where(x => x.Name.ToLower() == "first name").FirstOrDefault();
-                                    if (firstname != null)
-                                    {
-                                        personalInfoFacet.FirstName = GetValue(firstname);
-                                    }
-
-                                    var lastname = fields.Where(x => x.Name.ToLower() == "last name").FirstOrDefault();
-                                    if (lastname != null)
-                                    {
-                                        personalInfoFacet.LastName = GetValue(lastname);
-                                    }
-
-                                    EmailAddressList emailFacet = new EmailAddressList(new EmailAddress(GetValue(email), true), "Work");
-
-                                    var telephone = fields.Where(x => x.Name.ToLower() == "telephone").FirstOrDefault();
-                                    PhoneNumberList numberFacet = new PhoneNumberList(new PhoneNumber("+44", GetValue(telephone)), "Work");
-
-                                    client.SetFacet(contact, personalInfoFacet);
-                                    client.SetFacet(contact, emailFacet);
-                                    client.SetFacet(contact, numberFacet);
-
-                                    client.Submit();
-                                }
+                                contact = new Contact(new ContactIdentifier("sitecoreextranet", GetValue(email), ContactIdentifierType.Known));
                             }
-                            catch (XdbExecutionException ex)
+
+                            if (contact != null)
                             {
-                                // Manage exceptions
+                                PersonalInformation personalInfoFacet = new PersonalInformation();
+
+                                var firstname = fields.Where(x => x.Name.ToLower() == "first name").FirstOrDefault();
+                                if (firstname != null)
+                                {
+                                    personalInfoFacet.FirstName = GetValue(firstname);
+                                }
+
+                                var lastname = fields.Where(x => x.Name.ToLower() == "last name").FirstOrDefault();
+                                if (lastname != null)
+                                {
+                                    personalInfoFacet.LastName = GetValue(lastname);
+                                }
+
+                                EmailAddressList emailFacet = new EmailAddressList(new EmailAddress(GetValue(email), true), "Work");
+
+                                var telephone = fields.Where(x => x.Name.ToLower() == "telephone").FirstOrDefault();
+                                PhoneNumberList numberFacet = new PhoneNumberList(new PhoneNumber("+44", GetValue(telephone)), "Work");
+
+                                client.SetFacet(contact, personalInfoFacet);
+                                client.SetFacet(contact, emailFacet);
+                                client.SetFacet(contact, numberFacet);
+
+                                client.Submit();
                             }
                         }
+                        catch (XdbExecutionException ex)
+                        {
+                            // Manage exceptions
+                        }
                     }
-                    else
-                    {
-                        //update contact
-
-                    }
-                }
+                }                
             }
         }
 
