@@ -3,15 +3,12 @@ using System.Linq.Expressions;
 using Sitecore.Framework.Rules;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Segmentation.Predicates;
-using Sitecore.XConnect.Collection.Model;
-using System.Linq;
-using SitecoreCinema.Model.Collection;
-using Sitecore.Rules;
 using Sitecore.XConnect.Client;
+using SitecoreCinema.Models.Model.Collection;
 
 namespace SC9Demo.Rules.Conditions
 {
-    public class PurchasedTickets : ICondition, IMappableRuleEntity, IContactSearchQueryFactory
+	public class PurchasedTickets : ICondition, IMappableRuleEntity, IContactSearchQueryFactory
     {
 
         public PurchasedTickets() { }

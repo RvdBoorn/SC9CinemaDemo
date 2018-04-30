@@ -1,18 +1,11 @@
-﻿using System;
-using System.Linq.Expressions;
-using Sitecore.Framework.Rules;
-using Sitecore.XConnect;
-using Sitecore.XConnect.Segmentation.Predicates;
-using Sitecore.XConnect.Collection.Model;
-using System.Linq;
-using SitecoreCinema.Model.Collection;
-using Sitecore.Rules;
+﻿using Sitecore.Rules;
 using Sitecore.Rules.Conditions;
 using Sitecore.Analytics;
+using SitecoreCinema.Models.Model.Collection;
 
 namespace SC9Demo.Rules.Conditions
 {
-    public class PurchasedTicketsRule<T> : OperatorCondition<T> where T : RuleContext
+	public class PurchasedTicketsRule<T> : OperatorCondition<T> where T : RuleContext
     {
 
         public PurchasedTicketsRule() { }

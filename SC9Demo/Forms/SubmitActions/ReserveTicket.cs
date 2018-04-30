@@ -6,7 +6,7 @@ using Sitecore.ExperienceForms.Processing.Actions;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Client;
 using Sitecore.XConnect.Collection.Model;
-using SitecoreCinema.Model.Collection;
+using SitecoreCinema.Models.Model.Collection;
 using System;
 using System.Collections;
 using System.Collections.Generic;

@@ -5,7 +5,7 @@ using System.Web;
 using Sitecore.XConnect;
 using Sitecore.XConnect.Schema;
 
-namespace SitecoreCinema.Model.Collection
+namespace SitecoreCinema.Models.Model.Collection
 {
     public class SitecoreCinemaModel
     {
@@ -14,12 +14,13 @@ namespace SitecoreCinema.Model.Collection
         private static XdbModel BuildModel()
         {
             XdbModelBuilder builder = new XdbModelBuilder("SitecoreCinemaModel", new XdbModelVersion(1, 0));
-            builder.DefineFacet<Contact, CinemaVisitorInfo>(FacetKeys.CinemaVisitorInfo);
+			builder.ReferenceModel(Sitecore.XConnect.Collection.Model.CollectionModel.Model);
+
+			builder.DefineFacet<Contact, CinemaVisitorInfo>(FacetKeys.CinemaVisitorInfo);
             builder.DefineFacet<Interaction, CinemaInfo>(FacetKeys.CinemaInfo);
             builder.DefineEventType<PurchasedCinemaTicket>(false);
             builder.DefineEventType<PurchasedFood>(false);
             builder.DefineEventType<ReservedCinemaTicket>(false);
-            builder.ReferenceModel(Sitecore.XConnect.Collection.Model.CollectionModel.Model);
 
             return builder.BuildModel();
         }

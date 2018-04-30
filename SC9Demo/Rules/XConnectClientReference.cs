@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Configuration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Sitecore.XConnect.Client;
 using Sitecore.XConnect.Client.WebApi;
 using Sitecore.XConnect.Schema;
-using SitecoreCinema.Model.Collection;
 using Sitecore.Xdb.Common.Web;
-
+using SitecoreCinema.Models.Model.Collection;
 
 namespace SC9Demo.Rules
 {
 
 
-    public class XConnectClientReference
+	public class XConnectClientReference
     {
         private static XConnectClient singleRef;
         public static XConnectClient GetClient()

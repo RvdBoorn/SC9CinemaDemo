@@ -5,8 +5,8 @@ using Sitecore.XConnect;
 using Sitecore.XConnect.Segmentation.Predicates;
 using Sitecore.XConnect.Collection.Model;
 using System.Linq;
-using SitecoreCinema.Model.Collection;
 using Sitecore.XConnect.Client;
+using SitecoreCinema.Models.Model.Collection;
 
 namespace SC9Demo.Rules.Conditions
 {

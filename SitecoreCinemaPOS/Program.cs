@@ -4,7 +4,7 @@ using Sitecore.XConnect.Client.WebApi;
 using Sitecore.XConnect.Collection.Model;
 using Sitecore.XConnect.Schema;
 using Sitecore.Xdb.Common.Web;
-using SitecoreCinema.Model.Collection;
+using SitecoreCinema.Models.Model.Collection;
 using SitecoreCinemaPOS.AsciArt;
 using System;
 using System.Collections.Generic;
@@ -270,7 +270,7 @@ namespace SitecoreCinemaPOS
                     {
                         foreach(var evv in inter.Events)
                         {
-                            if(evv.GetType() == typeof(SitecoreCinema.Model.Collection.ReservedCinemaTicket))
+                            if(evv.GetType() == typeof(ReservedCinemaTicket))
                             {
                                 var interactionEvent = evv as ReservedCinemaTicket;
                                 movieName = interactionEvent.MovieName;
@@ -300,7 +300,13 @@ namespace SitecoreCinemaPOS
                     client.SetFacet<CinemaInfo>(interaction, CinemaInfo.DefaultFacetKey, new CinemaInfo() { Cinema = "St Katharines Dock" });
                     client.SetFacet<CinemaVisitorInfo>(contact, CinemaVisitorInfo.DefaultFacetKey, cinemaInfo);
                     interaction.Events.Add(new PurchasedCinemaTicket(DateTime.UtcNow, "GBP", 9.99m) { MovieName = movieName, EngagementValue = 500 });
-                    client.AddInteraction(interaction);
+
+					if (movieName.Equals("It", StringComparison.OrdinalIgnoreCase))
+					{
+						interaction.Events.Add(new Goal(Guid.Parse("{025FB9C8-A7ED-4F51-B659-A7654C565FAE}"), DateTime.UtcNow)); // Watched Horror Movie
+					}
+
+					client.AddInteraction(interaction);
                     await client.SubmitAsync();
 
                     Console.WriteLine("Picked Up Reserved Ticket");
@@ -354,21 +360,21 @@ namespace SitecoreCinemaPOS
                         Console.ForegroundColor = ConsoleColor.White;
                         foreach (var evv in interaction.Events)
                         {
-                            if(evv.GetType() == typeof(SitecoreCinema.Model.Collection.PurchasedCinemaTicket))
+                            if(evv.GetType() == typeof(PurchasedCinemaTicket))
                             {
                                 var interactionEvent = evv as PurchasedCinemaTicket;                                
                                 Console.WriteLine("Purchased Cinema Ticket for '" + interactionEvent.MovieName + "' on " + evv.Timestamp.ToShortDateString() + ", price: " + interactionEvent.MonetaryValue + " " + interactionEvent.CurrencyCode);
                             }
-                            if (evv.GetType() == typeof(SitecoreCinema.Model.Collection.PurchasedFood))
+                            if (evv.GetType() == typeof(PurchasedFood))
                             {
                                 var interactionEvent = evv as PurchasedFood;
                                 Console.WriteLine("Purchased food '" + interactionEvent.FoodType + "' on" + evv.Timestamp.ToShortDateString() + ", price: " + interactionEvent.MonetaryValue + " " + interactionEvent.CurrencyCode);
 
                             }
-                            if (evv.GetType() == typeof(SitecoreCinema.Model.Collection.ReservedCinemaTicket))
+                            if (evv.GetType() == typeof(ReservedCinemaTicket))
                             {
                                 var interactionEvent = evv as ReservedCinemaTicket;
-                                Console.WriteLine("Reserveed Cinema Ticket for '" + interactionEvent.MovieName + "' on" + evv.Timestamp.ToShortDateString());
+                                Console.WriteLine("Reserveed Cinema Ticket for '" + interactionEvent.MovieName + "' on " + evv.Timestamp.ToShortDateString());
 
                             }
 

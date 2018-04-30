@@ -93,7 +93,7 @@ namespace SC9Demo.Configuration.SiteUI
                 myArgument = parms[Paramater];
             }
 
-            if (myArgument == string.Empty)
+            if (string.IsNullOrWhiteSpace(myArgument))
             {
                 return DefaultValue;
             }

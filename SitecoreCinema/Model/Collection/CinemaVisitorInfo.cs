@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Sitecore.XConnect;
 
-namespace SitecoreCinema.Model.Collection
+namespace SitecoreCinema.Models.Model.Collection
 {
     [FacetKey(DefaultFacetKey)]
     [Serializable]

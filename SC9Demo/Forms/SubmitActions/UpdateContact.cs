@@ -1,4 +1,5 @@
-﻿using Sitecore.Analytics.Model;
+﻿using System;
+using Sitecore.Analytics.Model;
 using Sitecore.Diagnostics;
 using Sitecore.ExperienceForms.Models;
 using Sitecore.ExperienceForms.Processing;
@@ -27,7 +28,7 @@ namespace SC9Demo.Forms.SubmitActions
         {
             var fields = formSubmitContext.Fields;
 
-            var email = fields.Where(x => x.Name.ToLower() == "e-mail").FirstOrDefault();
+            var email = fields.FirstOrDefault(x => x.Name.Equals("e-mail", StringComparison.OrdinalIgnoreCase));
             if (email != null)
             {
                 if (Sitecore.Analytics.Tracker.Current.Contact.IsNew)
@@ -44,50 +45,52 @@ namespace SC9Demo.Forms.SubmitActions
 
                         var trackerIdentifier = new IdentifiedContactReference("sitecoreextranet", GetValue(email));
 
-                        using (Sitecore.XConnect.Client.XConnectClient client = Sitecore.XConnect.Client.Configuration.SitecoreXConnectClientConfiguration.GetClient())
-                        {
-                            try
-                            {
-                                var contact = client.Get<Sitecore.XConnect.Contact>(trackerIdentifier, new Sitecore.XConnect.ContactExpandOptions());
+	                    using (Sitecore.XConnect.Client.XConnectClient client = Sitecore.XConnect.Client.Configuration
+		                    .SitecoreXConnectClientConfiguration.GetClient())
+	                    {
+		                    try
+		                    {
+			                    var contact = client.Get<Sitecore.XConnect.Contact>(trackerIdentifier,
+				                                  new Sitecore.XConnect.ContactExpandOptions()) ??
+			                                  new Contact(new ContactIdentifier("sitecoreextranet", GetValue(email),
+				                                  ContactIdentifierType.Known));
+			                    PersonalInformation personalInfoFacet = new PersonalInformation();
 
-                                if (contact == null)
-                                {
-                                    contact = new Contact(new ContactIdentifier("sitecoreextranet", GetValue(email), ContactIdentifierType.Known));
-                                }
+			                    var firstname = fields.FirstOrDefault(x => x.Name.Equals("first name", StringComparison.OrdinalIgnoreCase));
+			                    if (firstname != null)
+			                    {
+				                    personalInfoFacet.FirstName = GetValue(firstname);
+			                    }
 
-                                if (contact != null)
-                                {
-                                    PersonalInformation personalInfoFacet = new PersonalInformation();
+			                    var lastname = fields.FirstOrDefault(x => x.Name.Equals("last name", StringComparison.OrdinalIgnoreCase));
+			                    if (lastname != null)
+			                    {
+				                    personalInfoFacet.LastName = GetValue(lastname);
+			                    }
 
-                                    var firstname = fields.Where(x => x.Name.ToLower() == "first name").FirstOrDefault();
-                                    if (firstname != null)
-                                    {
-                                        personalInfoFacet.FirstName = GetValue(firstname);
-                                    }
+			                    EmailAddressList emailFacet =
+				                    new EmailAddressList(new EmailAddress(GetValue(email), true), "Work");
 
-                                    var lastname = fields.Where(x => x.Name.ToLower() == "last name").FirstOrDefault();
-                                    if (lastname != null)
-                                    {
-                                        personalInfoFacet.LastName = GetValue(lastname);
-                                    }
+			                    var telephone = fields.FirstOrDefault(x =>
+				                    x.Name.Equals("telephone", StringComparison.OrdinalIgnoreCase));
+			                    var fullNumber = GetValue(telephone);
+			                    var countryCode = new string(fullNumber.Take(3).ToArray());
+			                    var dialNumber = new string(fullNumber.Skip(3).ToArray());
+			                    PhoneNumberList numberFacet =
+				                    new PhoneNumberList(new PhoneNumber(countryCode, dialNumber), "Work");
+			                    client.SetFacet(contact, personalInfoFacet);
+			                    client.SetFacet(contact, emailFacet);
+			                    client.SetFacet(contact, numberFacet);
 
-                                    EmailAddressList emailFacet = new EmailAddressList(new EmailAddress(GetValue(email), true), "Work");
+			                    client.Submit();
+		                    }
 
-                                    var telephone = fields.Where(x => x.Name.ToLower() == "telephone").FirstOrDefault();
-                                    PhoneNumberList numberFacet = new PhoneNumberList(new PhoneNumber("+44", GetValue(telephone)), "Work");
 
-                                    client.SetFacet(contact, personalInfoFacet);
-                                    client.SetFacet(contact, emailFacet);
-                                    client.SetFacet(contact, numberFacet);
-
-                                    client.Submit();
-                                }
-                            }
-                            catch (XdbExecutionException ex)
-                            {
-                                // Manage exceptions
-                            }
-                        }
+		                    catch (XdbExecutionException ex)
+		                    {
+			                    // Manage exceptions
+		                    }
+	                    }
                     }
                     else
                     {

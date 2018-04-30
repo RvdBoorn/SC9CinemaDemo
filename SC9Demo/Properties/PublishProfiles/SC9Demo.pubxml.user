@@ -6,14 +6,14 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\websites\sc9demo.sc</_PublishTargetUrl>
+    <_PublishTargetUrl>http://cinema.sc</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="App_config/Include/Auth0.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="App_config/Include/SC9Demo.config">
-      <publishTime>12/12/2017 12:42:59</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="assets/css/custom.css">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -24139,76 +24139,82 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Auth0.Owin.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/20/2017 10:23:48</publishTime>
     </File>
     <File Include="bin/Auth0.Owin.OpenIdConnectSigningKeyResolver.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>11/21/2016 16:10:36</publishTime>
     </File>
     <File Include="bin/HtmlAgilityPack.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:28:15</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.pdb">
+      <publishTime>03/01/2018 17:28:15</publishTime>
     </File>
     <File Include="bin/ICSharpCode.SharpZipLib.dll">
-      <publishTime>01/03/2011 14:16:38</publishTime>
+      <publishTime>03/01/2018 17:28:01</publishTime>
     </File>
     <File Include="bin/Lucene.Net.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:28:26</publishTime>
+    </File>
+    <File Include="bin/Lucene.Net.pdb">
+      <publishTime>03/01/2018 17:28:26</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/15/2015 02:06:24</publishTime>
     </File>
     <File Include="bin/Microsoft.DotNet.InternalAbstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/21/2016 21:04:54</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.CommandLineUtils.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.Configuration.Abstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.Configuration.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.Configuration.FileExtensions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.Configuration.Json.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.Abstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyInjection.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.DependencyModel.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/21/2016 21:04:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.FileProviders.Abstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.FileProviders.Physical.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.FileSystemGlobbing.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.Logging.Abstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.Options.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.PlatformAbstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Extensions.Primitives.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/22/2016 09:14:56</publishTime>
     </File>
     <File Include="bin/Microsoft.IdentityModel.Logging.dll">
       <publishTime>06/11/2017 20:59:08</publishTime>
     </File>
     <File Include="bin/Microsoft.IdentityModel.Protocol.Extensions.dll">
-      <publishTime>06/03/2017 16:09:02</publishTime>
+      <publishTime>03/06/2017 16:09:02</publishTime>
     </File>
     <File Include="bin/Microsoft.IdentityModel.Tokens.dll">
       <publishTime>06/11/2017 20:59:18</publishTime>
@@ -24217,196 +24223,214 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/05/2017 11:53:36</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Security.dll">
-      <publishTime>05/04/2017 11:53:42</publishTime>
+      <publishTime>04/05/2017 11:53:42</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:48</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Caching.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:50</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Configuration.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:50</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.Data.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:51</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:49</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.ServiceBus.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:56</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:28</publishTime>
     </File>
     <File Include="bin/Mvp.Xml.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:57</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/13/2016 23:06:14</publishTime>
     </File>
     <File Include="bin/Owin.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>11/13/2012 12:19:34</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>06/18/2015 20:19:46</publishTime>
     </File>
     <File Include="bin/SC9Demo.dll">
-      <publishTime>12/12/2017 12:44:14</publishTime>
+      <publishTime>03/27/2018 14:11:52</publishTime>
+    </File>
+    <File Include="bin/SC9Demo.pdb">
+      <publishTime>03/27/2018 14:11:52</publishTime>
     </File>
     <File Include="bin/Sitecore.Analytics.Core.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:18:04</publishTime>
     </File>
     <File Include="bin/Sitecore.Analytics.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:18:18</publishTime>
     </File>
     <File Include="bin/Sitecore.Analytics.Model.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:18:24</publishTime>
     </File>
     <File Include="bin/Sitecore.CES.DeviceDetection.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:19:28</publishTime>
     </File>
     <File Include="bin/Sitecore.ContentSearch.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:21:14</publishTime>
     </File>
     <File Include="bin/Sitecore.ContentSearch.Linq.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:21:22</publishTime>
     </File>
     <File Include="bin/Sitecore.ExperienceForms.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:26:42</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Common.Abstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 13:09:00</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Common.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 13:08:52</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Common.Extensions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 13:09:06</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Common.WildcardMatch.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 13:09:18</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Conditions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 13:09:28</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Configuration.Abstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 17:02:28</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Configuration.Common.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 17:02:36</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Configuration.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 17:02:24</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Rules.Abstractions.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 16:52:34</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Rules.Api.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 16:54:52</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Rules.Core.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 16:52:36</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Rules.Model.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 16:52:38</publishTime>
     </File>
     <File Include="bin/Sitecore.Framework.Rules.Registry.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>10/26/2017 16:52:40</publishTime>
     </File>
     <File Include="bin/Sitecore.Kernel.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:27:30</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.Client.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:28:14</publishTime>
     </File>
     <File Include="bin/Sitecore.Logging.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:28:20</publishTime>
     </File>
     <File Include="bin/Sitecore.Mvc.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:31:16</publishTime>
     </File>
     <File Include="bin/Sitecore.NVelocity.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:31:32</publishTime>
     </File>
     <File Include="bin/Sitecore.Owin.Authentication.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:31:58</publishTime>
     </File>
     <File Include="bin/Sitecore.Owin.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:32:02</publishTime>
     </File>
     <File Include="bin/Sitecore.XConnect.Client.Configuration.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:35:10</publishTime>
     </File>
     <File Include="bin/Sitecore.XConnect.Client.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:35:16</publishTime>
     </File>
     <File Include="bin/Sitecore.XConnect.Collection.Model.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:35:24</publishTime>
     </File>
     <File Include="bin/Sitecore.XConnect.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:35:34</publishTime>
     </File>
     <File Include="bin/Sitecore.XConnect.Segmentation.Predicates.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:36:04</publishTime>
     </File>
     <File Include="bin/Sitecore.XConnect.Segmentation.Predicates.Model.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:36:10</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Xdb.Common.Web.dll">
+      <publishTime>01/18/2018 16:36:22</publishTime>
     </File>
     <File Include="bin/Sitecore.Xdb.MarketingAutomation.Core.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:36:34</publishTime>
     </File>
     <File Include="bin/Sitecore.Zip.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>01/18/2018 16:38:56</publishTime>
     </File>
     <File Include="bin/SitecoreCinema.dll">
-      <publishTime>12/12/2017 12:44:08</publishTime>
+      <publishTime>03/27/2018 13:08:16</publishTime>
+    </File>
+    <File Include="bin/SitecoreCinema.Models.dll">
+      <publishTime>03/27/2018 14:11:50</publishTime>
+    </File>
+    <File Include="bin/SitecoreCinema.Models.dll.config">
+      <publishTime>03/27/2018 14:09:53</publishTime>
+    </File>
+    <File Include="bin/SitecoreCinema.Models.pdb">
+      <publishTime>03/27/2018 14:11:50</publishTime>
+    </File>
+    <File Include="bin/SitecoreCinema.pdb">
+      <publishTime>03/27/2018 13:08:16</publishTime>
     </File>
     <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
-      <publishTime>06/03/2017 16:09:04</publishTime>
+      <publishTime>03/06/2017 16:09:04</publishTime>
     </File>
     <File Include="bin/System.IO.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Net.Http.dll">
-      <publishTime>05/09/2017 14:54:18</publishTime>
+      <publishTime>09/05/2017 14:54:18</publishTime>
     </File>
     <File Include="bin/System.Reflection.dll">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -24418,106 +24442,106 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:52</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:52</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:28:13</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:52</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:52</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/01/2018 17:27:52</publishTime>
     </File>
     <File Include="exit.aspx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:28:01</publishTime>
     </File>
     <File Include="identifyas.aspx">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:28:01</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/27/2018 12:41:57</publishTime>
     </File>
     <File Include="Views/Banner/BlurSlider.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Banner/MapBanner.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Banner/RetroTextBanner.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Banners/BlurSlider.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Layouts/MainLayout.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Lists/MovieList.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/Lists/MoviesList.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Navigation/NavigationBar.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Page/ContentWithImage.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Page/Movie.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Shared/ShowPageEditorAlert.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Spots/FilmSpot.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Spots/PromoSpot.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/2Col.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/3Col.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/Dynamic/2Col.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/Dynamic/3Col.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/Dynamic/Column.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/Dynamic/DynaamicCols NoPadding.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/Dynamic/DynaamicCols.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/Dynamic/DynamicColumn.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Sublayouts/Dynamic/Row.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Visit/VisitDetails.cshtml">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>03/26/2018 23:27:55</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/15/2017 10:46:25</publishTime>
+      <publishTime>03/27/2018 14:12:10</publishTime>
     </File>
   </ItemGroup>
 </Project>

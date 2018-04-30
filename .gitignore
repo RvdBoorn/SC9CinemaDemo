@@ -8,7 +8,11 @@ SitecoreCinema/bin/
 SitecoreCinema/obj/
 SitecoreCinemaConsole/bin/
 SitecoreCinemaConsole/obj/
+SitecoreCinemaPOS/obj/
+SitecoreCinemaPOS/obj/
+SitecoreCinemaPOSApp/bin/
+SitecoreCinemaPOSApp/bin/
 
 *.dll
 
-SitecoreCinemaPOS/obj/Release/
+

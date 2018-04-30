@@ -48,7 +48,7 @@ namespace SC9Demo.Rules.Conditions
                 {
                     var contact = AsyncHelpers.RunSync(() => client.GetContactAsync(
                     new IdentifiedContactReference("sitecoreextranet", ContactIdentifier),
-                    new ContactExpandOptions(SitecoreCinema.Model.Collection.CinemaVisitorInfo.DefaultFacetKey)));
+                    new ContactExpandOptions(SitecoreCinema.Models.Model.Collection.CinemaVisitorInfo.DefaultFacetKey)));
 
                     return contact;
                 }
@@ -72,7 +72,7 @@ namespace SC9Demo.Rules.Conditions
             {
                 var contact = AsyncHelpers.RunSync(() => client.GetContactAsync(
                     new IdentifiedContactReference(validIdentifier.Source, validIdentifier.Identifier),
-                    new ContactExpandOptions(SitecoreCinema.Model.Collection.CinemaVisitorInfo.DefaultFacetKey)));
+                    new ContactExpandOptions(SitecoreCinema.Models.Model.Collection.CinemaVisitorInfo.DefaultFacetKey)));
 
                 return contact;
             }
